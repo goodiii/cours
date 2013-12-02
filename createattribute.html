@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Test</title>
+</head>
+
+<body>
+<h1>Une page très dynamique</h1>
+<script type="text/javascript">
+
+ var alignement = document.createAttribute("align");
+     alignement.nodeValue = "right";
+ var Element = document.getElementsByTagName("h1")[0]; // on recupere l'élement par son tag, soit h1. [0] correspond a premier de la liste qu'il rencontre
+     Element.setAttributeNode(alignement);			//
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<title>Test</title>
+	<script type="text/javascript">
+		function ResetCheck() {
+		var chk = window.confirm("Voulez vous effacer toutes les saisies pour la eme fois ?");
+		return(chk);
+		}
+		
+	</script>
+</head>
+
+<body>
+	<form name="Test" onReset="return ResetCheck()" action="">
+	<!-- le formulaire a un comportement implicite habituel: il reset si on clic sur l'input de type reset.
+		Toutefois, ici, on introduit un traitement extraordinaire qui est effectué en priorité.
+		Si la function ResetCheck retourne false, le traitement habituel n'aura pas lieu.
+		Les traitements explicite extraordinaire passent toujours en priorité
+		-->
+	<pre>
+		Nom: <input size="30"><br>
+		Idée: <input size="30"><br>
+		<input type="reset">
+		</pre>
+	</form>
+</body>
+
+</html>

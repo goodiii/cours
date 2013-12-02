@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+function carre() {
+   var resultat = document.formulaire.saisie.value * document.formulaire.saisie.value;
+   alert("Le carré de " + document.formulaire.saisie.value + " = " + resultat);
+}
+</script>
+</head>
+<body>
+<form name="formulaire" action="">
+<input type="text" name="saisie" size="3">
+<input type="button" value="Calculer le carré" onClick="carre()">
+</form>
+</body>
+</html> 

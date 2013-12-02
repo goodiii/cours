@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Test</title>
+</head>
+
+<body>
+<a href="../../../index.htm"
+ onMouseup="alert('Le spectacle commence MAINTENANT'); window.location.href='../../../index.htm'; return false">Lien</a> 
+ <!-- location correspond au contenu du window. 
+ Le traitement explicite en js passe avant le contenu implicite du a href.
+ si le traitement explicite retourne false, on n'effectue pas le traitement implicite habituel
+ si le traitement explicite retourne true, on effectue le traitement implicite -->
+
+ -->
+</body>
+
+</html>

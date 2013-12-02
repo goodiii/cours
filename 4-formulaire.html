@@ -1,0 +1,42 @@
+<form method="get" action="">
+Enregistrement d'un utilisateur
+<table border=0>
+	<tr>	<td>Nom	</td>	<td><input type="text" name="nom">   </td></tr>
+	<tr>	<td>Prénom</td> <td><input type="text" name="prenom"></td></tr>
+
+	<tr>
+		<td>Sexe</td>
+		<td>
+			Homme : <input type="radio" name="sexe" value="M"><br>
+			Femme : <input type="radio" name="sexe" value="F">
+		</td>
+	</tr>
+
+	<tr>
+		<td>Fonction</td>
+		<td>
+			<select name="fonction">
+				<option value="enseignant">Enseignant</option>
+				<option value="etudiant">  Etudiant  </option>
+				<option value="ingenieur"> Ingénieur </option>
+				<option value="retraite">  Retraité  </option>
+				<option value="autre">     Autre     </option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Commentaires</td>
+		<td>
+			<textarea rows="5" name="commentaires">
+			Tapez ici vos commentaires
+			</textarea>
+		</td>
+	</tr>
+	
+	<tr>
+		<td COLSPAN=2>
+			<input type="submit" value="Envoyer">
+		</td>
+	</tr>
+</table>
+</form>

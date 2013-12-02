@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+<!--
+var i = 0;
+function compter() {
+ i = i + 1;
+ actif = window.setTimeout("compter()",1000);
+}
+function arreter() {
+ window.clearTimeout(actif);
+ alert(i + " secondes");
+}
+actif = window.setTimeout("compter()",1000);
+//-->
+</script>
+</head>
+
+<body>
+<form action="">
+<input type="button" value="cliquer" onClick="arreter()">
+</form>
+</body>
+
+</html>

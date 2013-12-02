@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Test</title>
+			<script language="JavaScript">
+				function controlesouris(Element) {
+				document.f.left.value=Element.offsetLeft;
+				document.f.top.value=Element.offsetTop;
+				}
+			</script>
+	</head>
+
+	<body>
+		<form name="f" action="">
+			Top <input name="left"/> <br/>
+			Left <input name="top"/> <br/>
+			<input type="reset" value="reset" /> <br/>
+		</form>
+		
+		<p onMousemove="controlesouris(this)">Ici un petit texte</p>
+		<p onMousemove="controlesouris(this)">Ici un</p>
+	</body>
+
+</html>

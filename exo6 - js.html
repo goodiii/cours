@@ -1,0 +1,20 @@
+<!-- enoncé: 
+1. quand la souris arrive l'image, on met le nbre de move a 0 
+2. quand la souris se deplace sur l'image, le nombre de moves incremente l'input
+3. quand on sort, on garde la derniere inscrite au compteur-->
+
+<html>
+	<head>
+		<title>Test</title>
+	</head>
+	
+<body>
+	<form name="f">
+	Nombre de moves <input type="text" name="compteur" value="0"/>
+	</form>
+	<img src="" style="width:150px;height:150px" onMouseover="document.f.compteur.value='0'" onMousemove="document.f.compteur.value++" />
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+var Start = new Date();	
+var heuredebut = Start.getTime();
+
+function sejour() {
+ var fin = new Date();
+ var heurefin = fin.getTime();
+ var sejour = Math.floor((heurefin - heuredebut) / 1000); // Math est un objet. floor est une methode qui retourne le nombre entier inferieur le plus proche. 
+ alert("Vous êtes restés  " + sejour + " secondes sur cette page");
+}
+</script>
+</head>
+
+<body onUnload="sejour()">
+<h1>Un long séjour sur cette page!</h1>
+<p><a href="../../../index.htm"><b>Et puis ensuite partis!</b></a></p>
+</body>
+
+</html>

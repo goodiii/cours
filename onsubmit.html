@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>Test</title>
+<script type="text/javascript">
+function CheckInput() {
+ for(i=0; i<document.forms[0].elements.length; ++i) // forms[0] correspond à un tableau dans lequel on retrouve les formulaires de la page. [0] fait reference au 1er formulaire de la page.
+ // elements fait references a un tableau contenant les donnees du formulaire. Ici, on prend les donnees du 1er formulaire.
+ // length precise la longueur du tableau elements.
+ if(document.forms[0].elements[i].value == "")  {
+    alert("Tous les champs n'ont pas été remplis!");
+        document.forms[0].elements[i].focus();
+        return false;
+   }
+  return true;
+}
+</script>
+</head>
+
+<body>
+<form action="onsubmit.htm" onSubmit="return CheckInput();"> <!-- le onsubmit passe avant le action -->
+Champ 1: <input size="30"><br>
+Champ 2: <input size="30"><br>
+Champ 3: <input size="30"><br>
+<input type="submit" value="Valider"> <!-- il est necessaire de mettre une value a chaque input. -->
+</form>
+</body>
+
+</html>

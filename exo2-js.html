@@ -1,0 +1,22 @@
+<!-- enoncé: 
+1. quand on clic avec la souris sur l image, on incremente un compteur
+2. quand on relève le clic souris, on incremente un autre compteur
+3. 
+-->
+
+<html>
+	<head>
+		<title>Test</title>
+	</head>
+	
+<body>
+	<form name="f">
+	Nombre de clic <input type="text" name="compteur1" value="0"/>
+	Nombre de mouseup 	<input type="text" name="compteur2" value="0"/>
+	</form>
+	<img src="" style="width:150px;height:150px" onMousedown="document.f.compteur1.value++" onMouseup="document.f.compteur2.value++" />
+
+ 
+</body>
+
+</html>
